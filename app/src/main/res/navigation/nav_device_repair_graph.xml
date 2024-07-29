@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_device_repair_graph.xml"
+    app:startDestination="@id/deviceRepairPageFragment">
+
+    <fragment
+        android:id="@+id/deviceRepairPageFragment"
+        android:name="net.qingmowan.test.DeviceRepairPageFragment"
+        android:label="fragment_device_repair_page"
+        tools:layout="@layout/fragment_device_repair_page">
+        <action
+            android:id="@+id/action_deviceRepairPageFragment_to_showFragment"
+            app:destination="@id/showFragment"
+            app:enterAnim="@anim/interface_in"
+            app:exitAnim="@anim/interface_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/showFragment"
+        android:name="net.qingmowan.test.ShowFragment"
+        android:label="fragment_show"
+        tools:layout="@layout/fragment_show" />
+
+
+</navigation>
